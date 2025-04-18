@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W3 Montagem Industrial</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #ff6600;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      height: 60px;
+    }
+    .center-title {
+      flex: 1;
+      text-align: center;
+    }
+    nav {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      color: #000;
+      transform: scale(1.1);
+    }
+    .social-links {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .social-links a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social-links img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s;
+    }
+    .social-links img:hover {
+      transform: scale(1.2);
+    }
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #ff6600;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      background-color: #222;
+      color: #999;
+      text-align: center;
+      padding: 20px;
+    }
+    .obra {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .obra img {
+      width: 300px;
+      margin: 10px;
+      border: 2px solid #ff6600;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .obra img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      margin: 10% auto;
+      display: block;
+      max-width: 80%;
+    }
+    .modal-content img {
+      width: 100%;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo1.jpg" alt="Logo da W3 Montagem Industrial">
+    <div class="center-title">
+      <h1>W3 Montagem Industrial</h1>
+    </div>
+    <img class="logo" src="logo1.jpg" alt="Logo da W3 Montagem Industrial">
+    <nav>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#aluguel">Aluguel de Munck</a>
+      <a href="#obras">Obras Executadas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="quem-somos">
+    <div class="container">
+      <h2>Quem Somos</h2>
+      <p>A <strong>W3 Montagem Industrial</strong> é uma empresa fundada em 2021 na cidade de <strong>Dourados - MS</strong>, especializada em montagem mecânica de equipamentos industriais. Atuamos com excelência nos estados de <strong>Rondônia</strong> e <strong>Mato Grosso</strong>, oferecendo soluções sob medida para os setores onde a força e a precisão da indústria fazem a diferença.</p>
+      <p>Com uma equipe técnica qualificada e comprometida, a W3 se destaca pela eficiência, segurança e qualidade na execução de seus serviços. Nosso foco é atender com agilidade e confiança os segmentos de <strong>fazendas, tradings, portos</strong> e <strong>agroindústrias</strong>, sempre com responsabilidade, inovação e atenção aos detalhes.</p>
+      <p>Mais do que montar equipamentos, construímos parcerias duradouras baseadas na confiança e nos resultados.</p>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="container">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Montagem de estruturas metálicas</li>
+        <li>Instalação de equipamentos industriais</li>
+        <li>Manutenção e retrofit de máquinas</li>
+        <li>Serviços personalizados conforme necessidade do cliente</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="aluguel">
+    <div class="container">
+      <h2>Aluguel de Munck</h2>
+      <p>Oferecemos serviço de <strong>locação de caminhão Munck</strong> para movimentação e içamento de cargas pesadas com segurança, rapidez e profissionalismo. Atendemos obras industriais, instalações agrícolas, movimentações em fazendas e muito mais.</p>
+      <div class="obra">
+        <img src="munck1.jpg.jpg" alt="Caminhão Munck">
+        <p>Caminhão Munck em operação</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="obras">
+    <div class="container">
+      <h2>Obras Executadas</h2>
+      <div class="obra"><img src="obra1.jpg" alt="Projeto 1"><p>Projeto industrial 1</p></div>
+      <div class="obra"><img src="obra2.jpg" alt="Projeto 2"><p>Projeto industrial 2</p></div>
+      <div class="obra"><img src="obra3.jpg" alt="Projeto 3"><p>Projeto industrial 3</p></div>
+      <div class="obra"><img src="obra4.jpg" alt="Projeto 4"><p>Projeto industrial 4</p></div>
+      <div class="obra"><img src="obra5.jpg" alt="Projeto 5"><p>Projeto industrial 5</p></div>
+      <div class="obra"><img src="obra6.jpg" alt="Projeto 6"><p>Projeto industrial 6</p></div>
+      <div class="obra"><img src="obra7.jpg" alt="Projeto 7"><p>Projeto industrial 7</p></div>
+      <div class="obra"><img src="obra8.jpg" alt="Projeto 8"><p>Projeto industrial 8</p></div>
+      <div class="obra"><img src="obra9.jpg" alt="Projeto 9"><p>Projeto industrial 9</p></div>
+      <div class="obra"><img src="obra10.jpg" alt="Projeto 10"><p>Projeto industrial 10</p></div>
+      <div class="obra"><img src="obra11.jpg" alt="Projeto 11"><p>Projeto industrial 11</p></div>
+      <div class="obra"><img src="obra12.jpg" alt="Projeto 12"><p>Projeto industrial 12</p></div>
+      <div class="obra"><img src="obra13.jpg" alt="Projeto 13"><p>Projeto industrial 13</p></div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para orçamentos, dúvidas ou mais informações:</p>
+      <ul>
+        <li><strong>Telefone:</strong> (77)9.9851-0279 / (69) 9.9302-2888</li>
+        <li><strong>Email:</strong> w3montagemindustrial@gmail.com</li>
+        <li><strong>Endereço:</strong> AV. Vitoria Régia, 1715, Vilhena - RO</li>
+      </ul>
+      <div class="social-links">
+        <a href="https://www.instagram.com/w3_montagem?igsh=MTdodnQ5eXNhaGttdQ==" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/w3-montagem-a09897322?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Buq7pLZiRSqSlP4apNpvCaA%3D%3D" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 W3 Montagem Industrial. Todos os direitos reservados.</p>
+  </footer>
+
+  <div id="imagemModal" class="modal">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <div class="modal-content">
+      <img id="imagemGrande" src="" alt="Imagem em destaque">
+    </div>
+  </div>
+
+  <script>
+    const imagens = document.querySelectorAll('.obra img');
+    const modal = document.getElementById('imagemModal');
+    const imagemGrande = document.getElementById('imagemGrande');
+
+    imagens.forEach(img => {
+      img.addEventListener('click', () => {
+        imagemGrande.src = img.src;
+        modal.style.display = 'block';
+      });
+    });
+
+    function fecharModal() {
+      modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
